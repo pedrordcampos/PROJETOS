@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="public/assets/css/style.css" />
+    <title>Fazendinha Feliz</title>
+  </head>
+  <body>   
+    <div class="menu-superior">
+      <nav>
+        <ul>
+          <li>Teste de Menu Superior</li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Menu com as ferramentas -->
+    <div class="menu">
+      <nav>
+        <ul>
+          <!-- Lista com as ferramentas -->
+          <li><img src="public/assets/img/seta.png" alt="Seta" data-value='seta' onclick="selecionarFerramenta(event)"></li>
+          <li><img src="public/assets/img/pá.png" alt="Pá" data-value='pá' onclick="selecionarFerramenta(event)"></li>
+          <li><img src="public/assets/img/regador.png" alt="Regador" data-value='regador' onclick="selecionarFerramenta(event)"></li>
+          <li><img src="public/assets/img/saco-de-semente.png" alt="Saco de sementes" data-value='saco-de-sementes' onclick="selecionarFerramenta(event)"></li>
+          <li><img src="public/assets/img/defensivo-natural.png" alt="Defensivo natural" data-value='defensivo-natural' id="defensivo-natural" onclick="selecionarFerramenta(event)"></li>
+          <li><img src="public/assets/img/colheita.png" alt="Colheita" data-value='colheita' onclick="selecionarFerramenta(event)"></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <!-- Imagem de fundo da fazendinha -->
+      <img src="public/assets/img/background.jpg" alt="Imagem de fundo" id="background">
+        <!-- Elemento onde a imagem será exibida -->
+        <div class="area-de-exibicao"></div>
+        <!-- Campos para as plantações -->
+        <div class="fields">
+          <img src="public/assets/img/grama1.png" alt="Campo 1" id="campo1" data-value='1' onclick="selecionarCampo(event)">
+          <img src="public/assets/img/grama1.png" alt="Campo 2" id="campo2" data-value='2' onclick="selecionarCampo(event)">
+          <img src="public/assets/img/grama1.png" alt="Campo 3" id="campo3" data-value='3' onclick="selecionarCampo(event)">
+          <img src="public/assets/img/grama1.png" alt="Campo 4" id="campo4" data-value='4' onclick="selecionarCampo(event)">
+          <img src="public/assets/img/grama1.png" alt="Campo 5" id="campo5" data-value='5' onclick="selecionarCampo(event)">
+          <img src="public/assets/img/grama1.png" alt="Campo 6" id="campo6" data-value='6' onclick="selecionarCampo(event)">
+          <img src="public/assets/img/grama1.png" alt="Campo 7" id="campo7" data-value='7' onclick="selecionarCampo(event)">
+          <img src="public/assets/img/grama1.png" alt="Campo 8" id="campo8" data-value='8' onclick="selecionarCampo(event)">
+          <img src="public/assets/img/grama1.png" alt="Campo 9" id="campo9" data-value='9' onclick="selecionarCampo(event)">
+          <img src="public/assets/img/grama1.png" alt="Campo 10" id="campo10" data-value='10' onclick="selecionarCampo(event)">
+          <img src="public/assets/img/grama1.png" alt="Campo 11" id="campo11" data-value='11' onclick="selecionarCampo(event)">
+          <img src="public/assets/img/grama1.png" alt="Campo 12" id="campo12" data-value='12' onclick="selecionarCampo(event)">
+          <img src="public/assets/img/grama1.png" alt="Campo 13" id="campo13" data-value='13' onclick="selecionarCampo(event)">
+          <img src="public/assets/img/grama1.png" alt="Campo 14" id="campo14" data-value='14' onclick="selecionarCampo(event)">
+          <img src="public/assets/img/grama1.png" alt="Campo 15" id="campo15" data-value='15' onclick="selecionarCampo(event)">
+        </div>
+        <!-- Animais -->
+        <div class="animais">
+            <!-- Vaca e balde vazio ou balde cheio -->
+            <div class="vaca">
+              <img src="public/assets/img/vaca.png" alt="Vaca" id="vaca">
+            </div>
+            <div class="balde-vazio">
+              <div id="contLeite"><span>Leite:</span></div>
+              <img src="public/assets/img/balde-vazio.png" alt="Balde vazio" id="balde-vazio">
+            </div>
+            <!-- Galinha e ninho com ovos ou sem ovos -->
+            <div class="galinha">
+              <img src="public/assets/img/galinha.png" alt="Galinha" id="galinha">
+            </div>
+            <div class="ninho-vazio">
+              <div id="contOvo"><span>Ovos:</span></div>
+              <img src="public/assets/img/ninho.png" alt="Ninho" id="ninho-vazio">
+              <img src="public/assets/img/ovo-de-galinha.png" alt="Ovo" class="hidden" id="ovo">
+            </div>
+            <!-- Ovelha e cesto com ou sem pelos-de-ovelha -->
+            <div class="ovelha">
+              <img src="public/assets/img/ovelha.png" alt="Ovelha" id="ovelha">
+            </div>
+            <div class="cesto-vazio">
+              <div id="contLa"><span>Lã:</span></div>
+              <img src="public/assets/img/cesto.png" alt="Cesto" id="cesto-vazio">
+              <img src="public/assets/img/la.png" alt="Lã" class="hidden" id="la">
+            </div>
+          </div>
+        </div>
+    <!-- Script JS -->
+    <script src="public/assets/js/script.js"></script>
+  </body>
+</html>

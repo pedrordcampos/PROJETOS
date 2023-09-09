@@ -1,0 +1,342 @@
+/*#region CONFIGS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Impact, fantasy;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.area-de-exibicao img {
+    position: absolute;
+    z-index: 9999;
+}
+/*#endregion */
+
+/*#region CAMPOS PARA PLANTIO*/
+
+.fields img:hover {
+    transform: scale(1.1);
+}
+
+#campo1 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 405px;
+    left: 140px;
+}
+
+#campo2 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 430px;
+    left: 200px;
+}
+
+#campo3 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 455px;
+    left: 260px;
+}
+
+#campo4 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 480px;
+    left: 320px;
+}
+
+#campo5 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 505px;
+    left: 380px;
+}
+
+#campo6 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 380px;
+    left: 200px;
+} 
+
+#campo7 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 405px;
+    left: 260px;
+} 
+
+#campo8 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 430px;
+    left: 320px;
+} 
+
+#campo9 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 455px;
+    left: 380px;
+} 
+
+#campo10 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 480px;
+    left: 440px;
+}
+
+#campo11 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 355px;
+    left: 260px;
+}
+
+#campo12 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 380px;
+    left: 320px;
+}
+
+#campo13 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 405px;
+    left: 380px;
+}
+
+#campo14 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 430px;
+    left: 440px;
+}
+
+#campo15 {
+    position: absolute;
+    width: 8vw;
+    height: 8vh;
+    top: 455px;
+    left: 500px;
+}
+
+/*#endregion */
+
+/*#region MENU*/
+.menu {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #000;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 28%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+  
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 5px 5px 0 5px;  
+    padding: 0;
+}
+
+.menu img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.menu img:hover {
+    transform: scale(1.1);
+}
+/*#endregion */
+
+/*#region MENU-SUPERIOR*/
+.menu-superior {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: #000;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu-superior ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-superior li {
+    display: inline-block;
+    margin: 5px 5px 0 5px;  
+    padding: 0;
+   
+}
+
+.menu-superior img {
+    width: 90px;
+    height: 75px;
+}
+
+#moeda {
+    width: 2vw;
+    height: 4vh;
+}
+/*#endregion */
+
+/*#region ANIMAIS*/
+#vaca {
+    position: absolute;
+    width: 15vw;
+    height: 20vh;
+    top: 250px;
+    right: 150px;
+}
+
+#galinha {
+    position: absolute;
+    width: 3vw;
+    top: 360px;
+    right: 370px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#ovelha {
+    position: absolute;
+    width: 6vw;
+    top: 260px;
+    right: 480px;
+}
+/*#endregion */
+
+/*#region COLETA*/
+#balde-vazio {
+    position: absolute;
+    width: 3vw;
+    top: 330px;
+    right: 130px;
+}
+
+#ninho-vazio {
+    position: absolute;
+    width: 3vw;
+    top: 400px;
+    right: 330px; 
+}
+
+#cesto-vazio {
+    position: absolute;
+    width: 5vw;
+    top: 300px;
+    right: 430px;
+}
+  
+#ovo {
+    position: absolute;
+    width: 1vw;
+    top: 400px;
+    right: 345px;  
+} 
+
+#la {
+    position: absolute;
+    width: 3vw;
+    top: 320px;
+    right: 440px;
+} 
+
+.hidden {
+    display: none;
+}
+/*#endregion */
+
+/*#region CONTADOR*/
+
+#contOvo {
+    position: absolute;
+    top: 50px;
+    right: 50px;  
+    font-size: 25px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#contLeite {
+    position: absolute;
+    top: 50px;
+    right: 150px;  
+    font-size: 25px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#contLa {
+    position: absolute;
+    top: 50px;
+    right: 250px;  
+    font-size: 25px;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*#endregion */
